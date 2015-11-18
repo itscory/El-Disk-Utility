@@ -24,7 +24,7 @@ end getPartitionID
 choose from list activityList with title "Disk Utility" with prompt "Choose an Action:"
 if the result is not false then
 	set activity to the result
-	
+
 	if activity contains "Secure Erase" then
 		choose from list diskList with title activity with prompt "Choose which disk to " & activity & ":"
 		if the result is not false then
@@ -87,7 +87,7 @@ if the result is not false then
 				end tell
 			end if
 		end if
-		
+
 	else if activity contains "Repair" then
 		choose from list diskList with title activity with prompt "Choose which disk to " & activity & ":"
 		if the result is not false then
@@ -119,7 +119,7 @@ if the result is not false then
 				end tell
 			end if
 		end if
-		
+
 	else
 		choose from list diskList with title activity with prompt "Choose which disk to " & activity & ":"
 		if the result is not false then
